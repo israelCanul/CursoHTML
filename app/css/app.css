@@ -40,24 +40,80 @@
 
 
 
-a:link {
+/*a:link {
     color: red;
-}
+}*/
 
 /* visited link */
-a:visited {
+/*a:visited {
     color: green;
-}
+}*/
 
 /* mouse over link */
-a:hover {
+/*a:hover {
     color: hotpink;
-}
+}*/
 
 /* selected link */
-a:active {
+/*a:active {
     color: blue;
+}*/
+
+
+
+nav{
+  width: 100%;
+  position: relative;
+  background-color: #333;
 }
+/*nav::after{
+  content:"";
+  display:table;
+  clear: both;
+}*/
+nav:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+nav img{
+  float: left;
+  height: 50px;
+  position: relative;
+  padding-left:10px;
+}
+ul{
+  float: right;
+  margin: 0;
+padding: 0;
+overflow: hidden;
+  list-style-type: none;
+}
+ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+ul li{
+  float: left;
+}
+ul li a{
+  box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+line-height: 40px;
+  display: block;
+  padding:10px;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover{
+  -webkit-transition:all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #222;
+}
+
 
 
 /* media query

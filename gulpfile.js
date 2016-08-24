@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var autoprefixer = require('gulp-autoprefixer');
+var cleanCSS = require('gulp-clean-css');
 
 // for master pages
 var hbsmaster = require('gulp-handlebars-master');
@@ -39,8 +40,8 @@ gulp.task('handlebars', function() {
 	  "index" : {
 	    "title" : "Home Page"
 	  },
-    "estructuraHTML5" : {
-	    "title" : "Estructura"
+    "navexample" : {
+	    "title" : "Ejemplo de Navegacion"
 	  },
     "colores" : {
 	    "title" : "Colores"

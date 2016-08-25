@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- css completo de la pagina-->
+    <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+  </head>
+  <body>
+  <!-- Aqui va el contenido de cada una de las secciones -->
+  <!-- Enradas de informacion  -->
+<!--
+Tipos de entrada actuales apartir de HTML5 :
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+
+propiedades de casi todos los input
+disabled **********	Specifies that an input field should be disabled
+max	 **********	Specifies the maximum value for an input field
+maxlength	 **********	Specifies the maximum number of character for an input field
+min	 **********	Specifies the minimum value for an input field
+readonly	 **********	Specifies that an input field is read only (cannot be changed)
+required	 **********	Specifies that an input field is required (must be filled out)
+size	 **********	Specifies the width (in characters) of an input field
+step	 **********	Specifies the legal number intervals for an input field
+value	 **********	Specifies the default value for an input field
+-->
+
+
+<h1>Input</h1>
+<form action="" method="">
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Otro:<br>
+  <input type="button" name="name" value="Enviar">
+</form>
+
+
+<br><br>
+
+<!-- Radio Button  -->
+<h1>Radio Button</h1>
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+<br><br>
+
+<!-- Boton de envio de formulario  -->
+<h1>Submit Button</h1>
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+<!-- Select  -->
+<h1>Select</h1>
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<br><br>
+
+<!-- Textarea -->
+<h1>TextArea</h1>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<br><br>
+
+<form action="action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+  <!-- Aqui va el contenido de cada una de las secciones -->
+  </body>
+</html>

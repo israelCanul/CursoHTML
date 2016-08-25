@@ -106,7 +106,7 @@ line-height: 40px;
   padding:10px;
   height: 60px;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 ul li a:hover{
   -webkit-transition:all 0.5s ease;

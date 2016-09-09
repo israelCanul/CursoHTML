@@ -44,18 +44,21 @@ step	 **********	Specifies the legal number intervals for an input field
 value	 **********	Specifies the default value for an input field
 -->
 
+<form class="" action="index.html" method="post">
 
-<h1>Input</h1>
-<form action="" method="">
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname"><br>
-  Otro:<br>
-  <input type="button" name="name" value="Enviar">
 </form>
 
 
+<h1>Input</h1>
+<form action="http://royalresorts.com/" method="post">
+  Usernema:<br>
+  <input type="text" name="user" value="israel"/>
+  <br>
+  pass:<br>
+  <input type="password" name="lastname" ><br>
+  Otro:<br>
+  <input disabled type="button" name="name" value="Enviar">
+</form>
 <br><br>
 
 <!-- Radio Button  -->
@@ -63,10 +66,16 @@ value	 **********	Specifies the default value for an input field
 <form>
   <input type="radio" name="gender" value="male" checked> Male<br>
   <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
+  <input type="radio" name="gender1" value="other"> Other
+  <input type="radio" name="gender1" value="other"> Other
 </form>
 <br><br>
 
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car
+</form>
+<br><br>
 <!-- Boton de envio de formulario  -->
 <h1>Submit Button</h1>
 <form action="action_page.php">

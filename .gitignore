@@ -3,3 +3,9 @@
 /js
 /pages
 ..gitignore
+/app/Ejemplo
+..firebaserc
+.firebase.json
+.database.rules.json
+/scss/components
+.materialize.scss

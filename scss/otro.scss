@@ -1,0 +1,56 @@
+$background-red:red;
+$background-blue:blue;
+$background-green:green;
+$numerColumns:12;
+
+//responsive
+$desktop:1200px;
+$tablet:676px;
+
+.red{
+  background-color: $background-red;
+}
+.blue{
+  background-color: $background-blue;
+}
+.green{
+  background-color: $background-green;
+}
+
+@mixin clearfix {
+  &:after{
+    content:"";
+    display:table;
+    clear: both;
+  }
+}
+@mixin desktop{
+  @media only screen and (min-width: #{$desktop})
+  {
+    @content;
+  }
+}
+@mixin tablet{
+  @media only screen and (min-width: #{$tablet})
+  {
+    @content;
+  }
+}
+
+.row{
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  .col{
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 1px;
+
+    @for $i from 1 through 3 {
+      .item-#{$i} { width: 2em * $i; }
+    }
+
+  }
+}
